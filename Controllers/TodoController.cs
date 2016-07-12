@@ -28,6 +28,11 @@ namespace TodoApi.Controllers
             }
             return new ObjectResult(item);
         }
+        // [HttpGetAttribute("{id}")]
+        // public TodoItem Get(string id)
+        // {
+        //     return Get().Where(r => r.id == id).FirstOrDefault();
+        // }
 
         [HttpPost]
         public IActionResult Create([FromBody] TodoItem item)
